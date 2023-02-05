@@ -11,8 +11,13 @@
   <div>
     <article>
       <header>
-        <p class="editorial-warning"> WARNING: Before submission, double-check the git history and process accordingly
-          to preserve anonymity. </p>
+        <p class="editorial-warning"> [WARNING]:
+          This webpage is hosted on <a href="https://github.com/anonymous-1ejeaec/anonymous-1ejeaec.github.io"
+            target="_blank">https://github.com/anonymous-1ejeaec/anonymous-1ejeaec.github.io</a>.
+          As the paper is submitted to a conference with double-blind review,
+          we need to double-check the git history and process accordingly (e.g. rewrite commit history / commiter's name
+          and email) before submission to preserve anonymity.
+        </p>
         <h1>Anonymous Supplementary Material for "Evolving Three Dimension (3D) Abstract Art: Fitting Concepts by
           Language"</h1>
       </header>
@@ -38,11 +43,53 @@
       The flexibility to customize scenes allows a new way for the artist to express creativity ideas.
     </p>
 
-    <h2> Evaluation 1: </h2>
     <p>
-      <i>This corresponds to the</i> <b class="bolditalic">Figure 1</b> <i>in the paper, which shows the following: </i>
-      Our proposed method places semi-transparent triangles in three dimension (3D) spaces using Evolution
-      Strategies.
+      <b> Table of Content </b>
+    </p>
+
+    <ol class="toc-list">
+      <li>
+        <a href="#evaluation-1">
+          <span class="title">Evaluation 1</span>
+        </a>
+      </li>
+      <li>
+        <a href="#evaluation-2">
+          <span class="title">Evaluation 2</span>
+        </a>
+      </li>
+      <li>
+        (There is no Evaluation 3)
+      </li>
+      <li>
+        <a href="#evaluation-4">
+          <span class="title">Evaluation 4</span>
+        </a>
+      </li>
+      <li>
+        <a href="#evaluation-5">
+          <span class="title">Evaluation 5</span>
+        </a>
+      </li>
+      <li>
+        <a href="#evaluation-6">
+          <span class="title">Evaluation 6</span>
+        </a>
+      </li>
+      <li>
+        <a href="#evaluation-7">
+          <span class="title">Evaluation 7</span>
+        </a>
+      </li>
+    </ol>
+
+    <a name="evaluation-1"></a>
+    <h2> Evaluation 1: </h2>
+    <a href="#top">Back to top</a>
+    <p>
+      <i>This corresponds to the</i> <b class="bolditalic">Figure 1</b> <i>in the paper: </i>
+      <u>Our proposed method places semi-transparent triangles in three dimension (3D) spaces using Evolution
+        Strategies. </u>
       Leveraging ray-tracing based rendering Mitsuba 3,
       the rendered film at possibly multiple cameras is compared with its corresponding, user-specified text prompt
       using distance between their representation embedded by CLIP.
@@ -53,24 +100,18 @@
       <tbody>
 
         <tr>
-          <td rowspan="2" class="rowheader"> Prompts </td>
-          <td class=" camera camera1">Prompt/Film 1</td>
+          <td colspan="5" class="subfigureheader">
+            The prompt for all camera/films is <span class="camera"> Ancient Roman painting, Fourth Style, Third Style,
+              second Style,
+              Pompeii. </span>
+          </td>
+        </tr>
+        <tr>
+          <td \ class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
           <td class="camera camera2">Prompt/Film 2</td>
           <td class="camera camera3">Prompt/Film 3</td>
           <td class="camera camera4">Prompt/Film 4</td>
-        </tr>
-
-        <tr>
-          <td colspan="4">
-            <span class="camera camera1">Prompt 1</span>
-            <span class="camera camera2">Prompt 2</span>
-            <span class="camera camera3">Prompt 3</span>
-            <span class="camera camera4">Prompt 4</span>
-            <span class="camera">
-              = "Ancient Roman painting, Fourth Style, Third Style, second Style,
-              Pompeii."
-            </span>
-          </td>
         </tr>
 
         <tr>
@@ -91,6 +132,721 @@
         </tr>
       </tbody>
     </table>
+
+    <a name="evaluation-2"></a>
+    <h2> Evaluation 2: </h2>
+    <a href="#top">Back to top</a>
+    <p>
+      <i>This corresponds to the</i> <b class="bolditalic">Figure 2</b> <i>in the paper: </i>
+      Several examples of the evolved 3D art produced by our method, where the evolution process places triangles inside
+      the unit cube space visualized by black frame and sets triangles' colors and transparencies, forming a spatial
+      configuration.
+      In each example shown here, four cameras look at the space from four sides, although this is an arbitrary decision
+      and cameras can have different numbers and directions.
+      The film from each camera, capturing the rendered images, is compared with the prompt.
+      <u>
+        It could be observed that our method is capable of making a 3D art, which follows the spatial abstract art
+        style,
+        that looks like what humans can compose in natural language text.
+      </u>
+    </p>
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            The prompt for all camera/films is <span class="camera">Walt Disney World</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig2 (a)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (a)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (a)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (a)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig2 (a)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            The prompt for all camera/films is <span class="camera">A painting of Human</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig2 (b)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (b)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (b)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (b)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig2 (b)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            The prompt for all camera/films is <span class="camera">A bright, vibrant, dynamic, spirited, vivid painting
+              of a dog.</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig2 (c)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (c)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (c)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (c)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig2 (c)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            The prompt for all camera/films is <span class="camera">A painting of Human</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig2 (b)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (b)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (b)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (b)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig2 (b)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            The prompt for all camera/films is <span class="camera">A vivid, colorful bird'</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig2 (d)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (d)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (d)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig2 (d)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig2 (d)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <a name="evaluation-4"></a>
+    <h2> Evaluation 4: </h2>
+    <a href="#top">Back to top</a>
+    <p>
+      <i>This corresponds to the</i> <b class="bolditalic">Figure 4</b> <i>in the paper: </i>
+      Our method generating with text prompts "Walt Disney World"''" with four cameras,
+      with different numbers of triangles, namely 10, 25, 50 and 100 respectively.
+      <u>It could be shown that our method leverages the budgets of triangles in the increasing order of granularity, by
+        first using triangles for general shape and then moving towards fine-grained details.</u>
+    </p>
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <span class="camera">Walt Disney World</span> -- <b>10</b>> Triangles.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig4 (a)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (a)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (a)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (a)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig4 (a)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <span class="camera">Walt Disney World</span> -- <b>25</b>> Triangles.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig4 (b)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (b)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (b)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (b)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig4 (b)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <span class="camera">Walt Disney World</span> -- <b>50</b> Triangles.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig4 (c)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (c)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (c)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (c)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig4 (c)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <span class="camera">Walt Disney World</span> -- <b>100</b> Triangles.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig4 (d)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (d)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (d)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig4 (d)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig4 (d)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <a name="evaluation-5"></a>
+    <h2> Evaluation 5: </h2>
+    <a href="#top">Back to top</a>
+    <p>
+      <i>This corresponds to the</i> <b class="bolditalic">Figure 5</b> <i>in the paper:
+      </i>Our method generating two configurations, each with two independent runs.
+      The first configuration is with text prompts "Walt Disney World" with four cameras,
+      while the second configuration is with "A bright, vibrant, dynamic, spirited, vivid painting of a dog".
+      <u>Different runs lead to equally plausible yet largely different 3D art.
+        An artist user could thus be "in-the-loop" by choosing from different variants from these runs.</u>
+    </p>
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <span class="camera">Walt Disney World</span> -- <b> First Run</b>.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig5 (a)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (a)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (a)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (a)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig5 (a)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <span class="camera">Walt Disney World</span> -- <b> Second Run</b>.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig5 (b)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (b)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (b)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (b)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig5 (b)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <span class="camera">A bright, vibrant, dynamic, spirited, vivid painting of a dog</span> -- <b> First
+              Run</b>.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig5 (c)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (c)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (c)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (c)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig5 (c)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <span class="camera">A bright, vibrant, dynamic, spirited, vivid painting of a dog</span> -- <b> Second
+              Run</b>.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig5 (d)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (d)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (d)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig5 (d)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig5 (d)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+    <a name="evaluation-6"></a>
+    <h2> Evaluation 6: </h2>
+    <a href="#top">Back to top</a>
+    <p>
+      <i>This corresponds to the</i> <b class="bolditalic">Figure 6</b> <i>in the paper:</i>
+      Our method generating with text prompts "Walt Disney World", with four settings of transparency.
+      We show here three fixed transparency of 0&#37; 50&#37; and 80&#37; compared with the default setting of learnable
+      transparency.
+      <u>While the fixed transparency setting allows more global control of the scene, the learnable one provides great
+        flexibility in how triangles are related to the space.</u>
+    </p>
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            Fixed transparency of 0&#37;.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig6 (a)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (a)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (a)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (a)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig6 (a)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            Fixed transparency of 50&#37;.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig6 (b)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (b)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (b)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (b)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig6 (b)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            Fixed transparency of 80&#37;.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig6 (c)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (c)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (c)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (c)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig6 (c)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <b>Learnable</b> transparency.
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig6 (d)/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (d)/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (d)/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig6 (d)/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig6 (d)/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <a name="evaluation-7"></a>
+    <h2> Evaluation 7: </h2>
+    <a href="#top">Back to top</a>
+    <p>
+      <i>This corresponds to the</i> <b class="bolditalic">Figure 7</b> <i>in the paper:</i>
+      Our method generating with different text prompts at cameras.
+      The text prompt for camera 1 and 3 is "Walt Disney World" and for camera 2 and 4 is "an annoyed cat".
+      <u>Our method produces one 3D art, and successfully allows it to look differently from different angles.</u>
+    </p>
+    <table class="table-figure">
+      <tbody>
+        <tr>
+          <td colspan="5" class="subfigureheader">
+            <span class="camera camera1">Prompt 1</span> <span class="camera camera3">Prompt 3</span>: <span
+              class="camera">Walt Disney World</span>
+            <br>
+            <span class="camera camera2">Prompt 2</span> <span class="camera camera4">Prompt 4</span>: <span
+              class="camera">an annoyed cat</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Prompts </td>
+          <td class="camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig7/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig7/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig7/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig7/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig7/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
 
   </div>
 </body>

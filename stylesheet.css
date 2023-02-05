@@ -103,8 +103,15 @@ table.table-figure {
 }
 
 td.rowheader {
-  font-weight: bold;
+  font-weight: normal;
 }
+
+
+td.subfigureheader {
+  font-weight: normal;
+  font-size: larger;
+}
+
 
 .subfigure {
   width: 250px;
@@ -112,6 +119,7 @@ td.rowheader {
 
 .camera {
   font-family: monospace;
+  font-weight: bold;
 }
 
 .camera1 {
@@ -142,5 +150,5 @@ video.the360view {
 
 .editorial-warning {
   color: red;
-  font-weight: bold;
+  font-weight: normal;
 }

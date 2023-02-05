@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 
-body {
-  font-family: 'Roboto', Arial, sans-serif;
-}
 
 .paper_title {
   font-style: italic;
@@ -109,7 +106,7 @@ td.rowheader {
 
 td.subfigureheader {
   font-weight: normal;
-  font-size: larger;
+  font-size: x-large;
 }
 
 
@@ -118,8 +115,8 @@ td.subfigureheader {
 }
 
 .camera {
-  font-family: monospace;
-  font-weight: bold;
+  font-family: "IBM Plex Mono";
+  padding: 0 0.2em 0 0.2em; /* up right down left */
 }
 
 .camera1 {
@@ -147,8 +144,14 @@ video.the360view {
   font-style: italic;
 }
 
-
 .editorial-warning {
   color: red;
   font-weight: normal;
+}
+
+#outmost-wrapper{
+  max-width: 1200px;
+  margin: auto;
+  border: 3px solid #73AD21;
+  font-family: "IBM Plex Sans";
 }

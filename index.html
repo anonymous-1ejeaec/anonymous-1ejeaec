@@ -1,0 +1,98 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Anonymous Supplementary Material for "Evolving Three Dimension (3D) Abstract Art: Fitting Concepts by Language"
+  </title>
+  <link rel="stylesheet" type="text/css" href="./stylesheet.css" />
+</head>
+
+<body>
+  <div>
+    <article>
+      <header>
+        <p class="editorial-warning"> WARNING: Before submission, double-check the git history and process accordingly
+          to preserve anonymity. </p>
+        <h1>Anonymous Supplementary Material for "Evolving Three Dimension (3D) Abstract Art: Fitting Concepts by
+          Language"</h1>
+      </header>
+    </article>
+
+    <p>
+      <b>Paper:</b> <a href="./draft.pdf" target="_blank">Anonymous Draft</a>
+    </p>
+    <p>
+      <b>Authors: </b> Anonymous Author(s)
+    </p>
+
+    <p>
+      <b>Abstract:</b>
+      In computational creativity, digital arts, most in two dimension (2D) canvas, has been a dominating topic where
+      evolution algorithms have recently shown great quality and efficiency.
+      However, going from 2D to three dimension (3D) where computational approaches empowers creation of 3D art remains
+      an open field.
+      In this work, we extend the boundary of evolutionary algorithms to computational creativity in the spatial 3D art,
+      by bridge evolution strategies (ES) and 3D rendering through customizable parameterization of scenes.
+      We demonstrate that our approach is capable of placing semi-transparent triangles in 3D scenes that, when viewing
+      from specific angles, renders into films that looks like what humans understand natural language.
+      The flexibility to customize scenes allows a new way for the artist to express creativity ideas.
+    </p>
+
+    <h2> Evaluation 1: </h2>
+    <p>
+      <i>This corresponds to the</i> <b class="bolditalic">Figure 1</b> <i>in the paper, which shows the following: </i>
+      Our proposed method places semi-transparent triangles in three dimension (3D) spaces using Evolution
+      Strategies.
+      Leveraging ray-tracing based rendering Mitsuba 3,
+      the rendered film at possibly multiple cameras is compared with its corresponding, user-specified text prompt
+      using distance between their representation embedded by CLIP.
+      Such distances, aggregate by average, are used as the fitness in sense of Evolution Strategies, which optimize the
+      parameters of triangles to archive better finesses.
+    </p>
+    <table class="table-figure">
+      <tbody>
+
+        <tr>
+          <td rowspan="2" class="rowheader"> Prompts </td>
+          <td class=" camera camera1">Prompt/Film 1</td>
+          <td class="camera camera2">Prompt/Film 2</td>
+          <td class="camera camera3">Prompt/Film 3</td>
+          <td class="camera camera4">Prompt/Film 4</td>
+        </tr>
+
+        <tr>
+          <td colspan="4">
+            <span class="camera camera1">Prompt 1</span>
+            <span class="camera camera2">Prompt 2</span>
+            <span class="camera camera3">Prompt 3</span>
+            <span class="camera camera4">Prompt 4</span>
+            <span class="camera">
+              = "Ancient Roman painting, Fourth Style, Third Style, second Style,
+              Pompeii."
+            </span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="rowheader"> Rendered Film </td>
+          <td> <img class="subfigure" src="./media/fig1/films/000000.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig1/films/000001.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig1/films/000002.png""> </td>
+          <td> <img class=" subfigure" src="./media/fig1/films/000003.png""> </td>
+        </tr>
+
+        <tr>
+          <td class=" rowheader"> 360 Degree View </td>
+          <td colspan="4">
+            <video class="the360view" playsinline autoplay muted loop>
+              <source src="./media/fig1/viz.mp4" type="video/webm">
+            </video>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</body>
+
+</html>

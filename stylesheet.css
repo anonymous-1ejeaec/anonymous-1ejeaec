@@ -99,7 +99,7 @@ td.synthesis {
 table {
   text-align: center;
   border-collapse: collapse;
-  margin: 1.0rem;
+  margin: 2.0rem;
   margin-top: 3.0rem;
 }
 
@@ -142,6 +142,10 @@ td.subfigureheader {
 }
 
 
+h2 {
+  margin-top: 4rem;
+}
+
 .subfigure {
   width: 240px;
 }
@@ -165,10 +169,6 @@ td.subfigureheader {
 
 .camera4 {
   color: #cb00f5;
-}
-
-div.the360view-container {
-  border: #069af3;
 }
 
 video.the360view {

@@ -95,23 +95,55 @@ td.synthesis {
 
 /* Below are specific typesetting ones */
 
-table.table-figure {
+
+table {
   text-align: center;
+  border-collapse: collapse;
+  margin: 1.0rem;
+  margin-top: 3.0rem;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+tbody tr td{
+  border: 0.5px solid grey;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+tbody tr:first-child td{
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+
+tbody tr:last-child td{
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 td.rowheader {
   font-weight: normal;
+  text-align: left;
 }
 
 
 td.subfigureheader {
   font-weight: normal;
-  font-size: x-large;
+  font-size: normal;
 }
 
 
 .subfigure {
-  width: 250px;
+  width: 240px;
 }
 
 .camera {
@@ -135,8 +167,17 @@ td.subfigureheader {
   color: #cb00f5;
 }
 
+div.the360view-container {
+  border: #069af3;
+}
+
 video.the360view {
-  width: 500px
+  width: 240px
+}
+
+video.the360view:hover {
+  /* width: 600px; */
+  transform: scale(2.0);
 }
 
 .bolditalic {

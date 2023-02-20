@@ -111,16 +111,16 @@ tbody tr td{
 
 
 tbody tr:first-child td{
-  border: 1px solid black;
-  border-top: none;
+  border-top: 1px solid black;
+  border-bottom: 0.5px solid grey;
   border-left: none;
   border-right: none;
 }
 
 
 tbody tr:last-child td{
-  border: 1px solid black;
-  border-top: none;
+  border-top: 1px solid black;
+  border-bottom: none;
   border-left: none;
   border-right: none;
 }
@@ -167,7 +167,7 @@ h2 {
 }
 
 video.the360view {
-  width: 240px
+  width: 360px
 }
 
 video.the360view:hover {
